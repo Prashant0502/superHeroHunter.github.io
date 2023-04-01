@@ -141,7 +141,7 @@
     //  Load favourite by id function
     let loadFavourites = async function (id) {
 
-        let response = await fetch(`http://gateway.marvel.com//v1/public/characters/${id}?ts=1&apikey=ad7128e532a29031b89d34b4c0d3190a&hash=7e964deabf100bcca48f4660c4e2af1e`).catch(e => {
+        let response = await fetch(`https://gateway.marvel.com//v1/public/characters/${id}?ts=1&apikey=ad7128e532a29031b89d34b4c0d3190a&hash=7e964deabf100bcca48f4660c4e2af1e`).catch(e => {
             console.log("error");
  });
         let res = await response.json();

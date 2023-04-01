@@ -168,7 +168,7 @@
             mainHeading.style.display = "block";
             return;
         }
-        let response = await fetch(`http://gateway.marvel.com//v1/public/characters?nameStartsWith=${name}&ts=1&apikey=ad7128e532a29031b89d34b4c0d3190a&hash=7e964deabf100bcca48f4660c4e2af1e`).catch(e => {
+        let response = await fetch(`https://gateway.marvel.com//v1/public/characters?nameStartsWith=${name}&ts=1&apikey=ad7128e532a29031b89d34b4c0d3190a&hash=7e964deabf100bcca48f4660c4e2af1e`).catch(e => {
                      console.log("error");
           });
         let res = await response.json();
