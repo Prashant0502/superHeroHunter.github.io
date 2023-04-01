@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Hunter</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='./superhero-style.css'>
+    <link rel="icon" type="image/png" href="./titleicon.png">
+    <script src="https://kit.fontawesome.com/c2e4f2d141.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="navigation-box">
+        <div id="navigationBar">
+            <div class="navigationElement">
+                <i class="fas fa-home"></i>
+                <a href="./index.html">Home</a>
+            </div>
+            <div class="navigationElement">
+                <i class="fas fa-heart"></i>
+                <a href="./favourite.html">Favourites</a>
+            </div>
+        </div>
+
+        <!--bottom left cornor to show notification to user for add and removal of fav item -->
+
+        <div id="notificationDiv">
+            <!-- Error -->
+        </div>
+    </div>
+
+    <!-- Box have superhero image,name and skills -->
+
+    <section id="mainInformation">
+        <div class="heroImageContainer">
+            <img id="mainHeroImage" class="hero-image" src="imgErr.jpg" alt="">
+        </div>
+        <div class="superHeroDetail">
+            <div id="heroName" class="super-heroName">Super Hero</div>
+            <div id="favBtn"></div>
+
+            <section class="flex-col" id="info-container">
+            <div class="flex-col more-info">
+                <div class="flex-row id">
+                     <b>ID:</b>
+                     <span id="heroId"> </span>
+                </div>
+                <div class="flex-row comics">
+                     <b>Comics:</b>
+                     <span id ="heroComics"></span>
+                </div>
+                <div class="flex-row series">
+                     <b>Series:</b>
+                     <span id ="heroSeries"></span>
+                </div>
+                <div class="flex-row stories">
+                     <b>Stories:</b>
+                     <span id ="heroStories"></span>
+                </div>
+                <div class="flex-row events">
+                    <b>Events:</b>
+                    <span id ="heroEvent"></span>
+               </div>
+                <div class="flex-row hero-discription">
+                    <b>Discription:</b>
+                    <span id ="heroDiscription"></span>
+                </div>
+            </section>
+          
+
+
+           </div>
+      </div>
+    </section>
+
+    
+
+
+
+    <script src="./superhero-scripts.js"></script>
+</body>
+</html>

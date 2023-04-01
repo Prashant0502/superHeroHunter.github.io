@@ -1,0 +1,143 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    background-color: rgb(244 226 225);
+    color: #4A148C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: math;
+    /* background-image: url(""); */
+}
+
+#favBtn{
+    color: red;
+}
+
+.fa, .fas {
+    font-weight: 900;
+    color: #ff0000;
+}
+
+a{
+    color: cyan;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: math;
+}
+
+/* Styling of Navigation bar */
+
+#navigation-box{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+#navigationBar{
+    left: 0px;
+    right: 0px;
+    display: flex;
+    padding: 15px 30px;
+    background-color: #501807;
+    color: white;
+}
+
+.navigationElement{
+    margin: 0px 20px;
+}
+
+
+#mainInformation{
+    display: flex;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 98%;
+    background-size: contain;
+    background-size: cover;
+}
+
+.heroImageContainer{
+    align-self: center;
+    width: 30%;
+    
+}
+
+.hero-image{
+    border-radius: 50px;
+    width: 100%;
+    min-width: 350px;
+}
+
+.superHeroDetail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+    width: 70%;
+}
+
+.super-heroName{
+    text-align: center;
+    border: 3px solid #4CAF50;
+    border-radius: 4%;
+    padding: 7px;
+    align-self: center;
+    font-size: 2em;
+    color: #0c09da;
+    margin: 5px 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.color-bg-blue{
+    background-color: rgb(22, 41, 148);
+}
+
+
+#notificationDiv{
+    color: white;
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 0.2s ease-in-out;
+    position: fixed;
+    bottom: 30px;
+    left: 12px;
+    background-color: red;
+    padding: 4px;
+    font-size: 20px;
+    max-width: 150px;
+    text-align: center;
+}
+
+
+
+/* Styling for different width devices*/
+
+@media screen and (max-width:965px){
+
+    .section-heading{
+        font-size: 31px;
+    }
+
+    #mainInformation{
+        flex-direction: column;
+    }
+
+    .heroImageContainer{
+        width: 60%;
+        align-self: center;
+    }
+
+    .super-heroName{
+        font-size: 1.3em;
+    }
+
+    .hero-image{
+        min-width: 148px;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Hunter</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='./favourite-style.css'>
+    <link rel="icon" type="image/png" href="./titleicon.png ">
+    <script src="https://kit.fontawesome.com/c2e4f2d141.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation bar -->
+    <div id="navigation-box">
+        <div id="navigationBar">
+            <div class="navigationElement">
+                <i class="fas fa-home"></i>
+                <a href="./index.html">Home</a>
+            </div>
+            <div class="navigationElement">
+                <i class="fas fa-heart"></i>
+                <a href="./favourite.html">Favourite</a>
+            </div>
+        </div>
+
+        <!-- bottom left cornor to show notification to user for adding and removal of fav item -->
+        
+        <div id="notificationDiv">
+            <!-- Error -->
+        </div>
+
+        <!-- when there is no favourite superhero then show a message-->
+        
+        <div id="nothing-here">
+        <span id="heading-in">
+            Nothing to Show! Go to <a style="color:rgb(240, 240, 6);font-size: 30px; text-decoration: underline;" href="./index.html">Home</a> and
+            Add your favourite super heroes!
+        </span>
+        </div>
+    </div>
+
+    <!-- Box that have all favourite superhero card -->
+
+    <div id="superHeroBox">
+       
+    </div>
+
+    <!-- script file -->
+
+    <script src="./favourite-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+/* Global body style */
+body{
+   background-image: url('https://c4.wallpaperflare.com/wallpaper/359/407/695/captain-america-marvel-comics-movies-wallpaper-preview.jpg');
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 30px;
+    background-size: contain;
+    background-size: cover;
+      
+}
+
+a{
+    color: #07f62b;
+    text-decoration: solid;
+}
+
+label{
+    text-align: center;
+}
+
+#mainHeading{
+    color:#FFEE58;;;
+    font-weight: 800;
+    padding: 2px;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#heading-in{
+    background-color:inherit;
+}
+
+/* Styling of Navigation bar */
+
+#navigation-box {
+    position: sticky;
+    top: auto;
+    left: 0px;
+    right: 0;
+    display: inline-flex;
+    width: 102%;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+#navigationBar{
+    left: 0px;
+    right: 0px;
+    display: flex;
+    padding: 11px 30px;
+    background-color:rgb(13, 5, 98);
+    color: white;
+}
+
+.navigationElement{
+    margin: 0px 40px;
+}
+
+
+#heroSearchBar{
+    margin-left: auto;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-right: 50px;
+    color: aqua;
+}
+
+#text{
+    height: 30px;
+    font-size: larger;
+    position: relative;
+    top: -30px;
+    left: 5%;
+    color: #FFEE58;
+    font-family: Gill Sans Extrabold, sans-serif;
+}
+
+#select-SuperHero{
+    display: flex;
+    /* justify-content: center; */
+}
+
+input{
+    width: 400px;
+}
+#nameInput{
+    padding: 2px 10px;
+    border-radius: 0px;
+    margin: 3px 5px;
+    font-size: 18px;
+    color: #4dd60c;
+}
+
+
+/* Styling of nvigation bar for smaller screens */
+
+#hambutton{
+    display: none;
+    position: fixed;
+    color: white;
+    right: 20px;
+    top: 21px;
+}
+
+#ham-bar{
+    max-height: 0px;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease-in-out;
+}
+
+#ham-bar .navigationElement{
+    padding: 11px;
+    margin-left: auto;
+}
+
+/* Styling for SuperHero display Box */
+
+#superHeroBox{
+    display: flex;
+    width: 100%;
+    /* border: 2px solid rgb(12, 230, 161); */
+     /* border-radius: 10px; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 26px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.card-layout{
+    cursor: pointer;
+    padding: 6px;
+    min-width: 198px;
+    max-width: 298px;
+    margin: 28px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.4s cubic-bezier(.25,.8,.25,1);
+    font-weight: 300;
+    font-family: sans-serif;
+    font-size: 15px;
+    width: 26%;
+    background-color: rgb(243, 233, 233);
+    border: 2px solid rgb(230, 245, 17);
+    border-radius: 50px;
+}
+/* 
+.card-layout:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.23);
+} */
+
+.card-body{
+    font-size: 22px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.favBtn{
+    color: red;
+    margin-left: auto;
+}
+
+.hero-id{
+    display: none;
+}
+
+.heroImageContainer{
+    
+    width: 100%;
+}
+
+.hero-image{
+    max-height: 400px;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.heroName{
+    text-align: center;
+}
+
+#notificationDiv{
+    color: white;
+    opacity: 0;
+    border-radius: 8px;
+    transition: opacity 0.2s ease-in-out;
+    position: fixed;
+    bottom: 25px;
+    left: 12px;
+    background-color: red;
+    padding: 5px;
+    font-size: 20px;
+    max-width: 148px;
+    text-align: center;
+}
+
+/* Styling for different width  of devices*/
+
+@media screen and (max-width : 1260px){
+   input{
+       width:200px;
+   } 
+   
+}
+
+@media screen and (max-width : 910px){
+    #heroSearchBar{
+        margin-left: 0px;
+    }
+
+    #nameInput{
+        width: 202px;
+
+    }
+
+    #navigationBar{
+        flex-direction: column;
+        
+    }
+
+    #navigationBar .navigationElement{
+        display: none;
+    }
+
+    #hambutton{
+        display: block;
+    }
+
+    #mainHeading{
+        font-size: 35px;
+    }
+    #text{
+       display: none;
+   }
+}
+
+@media screen and (max-width : 360px){
+    
+    #nameInput{
+        width: 150px;
+    }
+}
